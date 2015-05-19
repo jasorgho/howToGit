@@ -1,0 +1,21 @@
+Response cook
+1c1eed151037e707b5f8a30345492da7 = sgl3r91ed4rdm4rbi44gmsm9i2
+
+Request
+60ea80a5b33a8f9c02d7b824c9c388a1	sh6eefv92tto58qoclugo3ae41
+Response Cookies
+67fd7583ccf7891e08116ad143fe5066	5995ec080a19d73d147e005509a02c0b
+
+curl 'http://narkon.minskregion.by/components/com_jvotesystem/ajax.php' -H 'Cookie: 60ea80a5b33a8f9c02d7b824c9c388a1=sh6eefv92tto58qoclugo3ae41' -H 'Origin: http://narkon.minskregion.by' -H 'Accept-Encoding: gzip, deflate' -H 'Accept-Language: en-US,en;q=0.8,be;q=0.6,ru;q=0.4' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.65 Safari/537.36' -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' -H 'Accept: application/json, text/javascript, */*; q=0.01' -H 'Referer: http://narkon.minskregion.by/index.php/component/jvotesystem/hits/kursy' -H 'X-Requested-With: XMLHttpRequest' -H 'Connection: keep-alive' --data 'paramView=poll&admin=0&lang=ru-RU&45e2cbac19512d3ac4ccec2b258b1456=1&task=vote&box=6&answer=43&template=smallblue' --compressed
+
+Request Cookies
+60ea80a5b33a8f9c02d7b824c9c388a1	sh6eefv92tto58qoclugo3ae41			
+67fd7583ccf7891e08116ad143fe5066	5995ec080a19d73d147e005509a02c0b
+Response Cookies										
+67fd7583ccf7891e08116ad143fe5066	5995ec080a19d73d147e005509a02c0b
+
+curl 'http://narkon.minskregion.by/components/com_jvotesystem/ajax.php' -H 'Cookie: 67fd7583ccf7891e08116ad143fe5066=5995ec080a19d73d147e005509a02c0b; 60ea80a5b33a8f9c02d7b824c9c388a1=sh6eefv92tto58qoclugo3ae41' -H 'Origin: http://narkon.minskregion.by' -H 'Accept-Encoding: gzip, deflate' -H 'Accept-Language: en-US,en;q=0.8,be;q=0.6,ru;q=0.4' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.65 Safari/537.36' -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' -H 'Accept: application/json, text/javascript, */*; q=0.01' -H 'Referer: http://narkon.minskregion.by/index.php/component/jvotesystem/hits/kursy' -H 'X-Requested-With: XMLHttpRequest' -H 'Connection: keep-alive' --data 'paramView=poll&admin=0&lang=ru-RU&45e2cbac19512d3ac4ccec2b258b1456=1&task=vote&box=6&answer=43&template=smallblue' --compressed
+
+
+
+curl -b cookies.txt -c newcookies.txt http://mvradio.by/programmy/kursy-radiovedushchikh
