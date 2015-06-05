@@ -29,7 +29,7 @@
             </div>
             <div class="form-group">
                 <div class="col-md-offset-2 col-md-8">
-                    <button class="btn btn-default" ng-click="addItem(text, price)">ADD</button>
+                    <button class="btn btn-default" ng-click="addItem(text, price, done)">ADD</button>
                 </div>
             </div>
         </div>
@@ -46,7 +46,7 @@
                     <td>{{item.purchase}}</td>
                     <td>{{item.price}}</td>
                     <td>
-                        <input type="checkbox" ng-model="item.done" checked="{{item.done}}" />
+                        <input type="checkbox" ng-checked="{{item.done}}" />
                     </td>
                 </tr>
             </tbody>
@@ -74,7 +74,13 @@
                 price: 310
             }]
         };
+
+
+
         var purchaseApp = angular.module("purchaseApp", []);
+
+
+
         purchaseApp.controller("purchaseController", function($scope) {
             $scope.list = model;
             $scope.addItem = function(text, price, done) {
