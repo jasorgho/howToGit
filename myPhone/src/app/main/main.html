@@ -24,10 +24,49 @@
     </div>
   </div> -->
 
-  <h2>NG iinclude</h2>
-  <div ng-controller="phoneController">
-      <ng-include src="'phonesList.html'"></ng-include>
+
+
+  <h2>ng-model</h2>
+  <div class="" ng-controller="phoneController">
+      <div class="" ng-repeat="currentMode in modes">
+          <label>
+              <input type="radio" name="modes" value="{{currentMode}}" ng-model="mode.value">
+              &nbsp;{{currentMode}}
+          </label>
+      </div>
+      <h2>NG iinclude</h2>
+
+      <ng-include src="setMode()"></ng-include>
+
+
+
+      <h2>ng-switch</h2>
+      <div class="" ng-switch on="mode.value">
+
+          <div class="" ng-switch-when="phones">
+              <div class="" ng-repeat="phone in phones">
+                  <b>{{phone.name}}</b>
+                  <p>Price: {{phone.price}} $</p>
+                  <p>Manufacter: {{phone.company.name}}</p>
+              </div>
+          </div>
+          <div class="" ng-switch-when="tablets">
+              <div class="" ng-repeat="tablet in tablets">
+                  <b>{{tablet.name}}</b>
+                  <p>Price: {{tablet.price}} $</p>
+                  <p>Manufacter: {{tablet.company.name}}</p>
+              </div>
+          </div>
+
+      </div>
   </div>
+
+  <div class="" ng-controller="modelDemo">
+      <textarea name="name" rows="8" cols="40" ng-model="textInArea">
+      </textarea>
+      <p>text in area: <span>{{textInArea}}</span>
+  </div>
+
 
   <hr>
 
